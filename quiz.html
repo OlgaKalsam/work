@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контрольна робота</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="png">
+</head>
+<body>
+    <header>
+        <div class="logo_header">
+            <img src="logo.png" alt="Logo" width="70">
+        </div>
+
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="page1.html">Матеріали 1</a>
+            <a href="page2.html">Матеріали 2</a>
+            <a href="quiz.html">Контрольна робота</a>
+        </nav>
+    </header>
+
+    <section class="main-content-quiz">
+        <h1 class="contr">Контрольна робота з теми " Похідна та її застосування "</h1>
+
+        <label for="name">Ім’я:</label>
+        <input class="in" type="text" id="name" name="name" value="Ваше ім’я" size="8">
+
+        <br>
+
+        <label for="surname">Прізвище:</label>
+        <input class="in" type="text" id="surname" name="surname" value="Ваше прізвище" maxlength="8">
+
+        <br>
+
+        <label for="select">Рівень вашої підготовки:</label>
+        <select class="in" id="select" name="select" size="3">
+            <option value="1">Низький</option>
+            <option value="2">Середній</option>
+            <option value="3">Високий</option>
+        </select>
+
+        <label for="date">Дата:</label>
+        <input class="in" type="date" id="date" name="date" min="2023-01-01" max="2023-12-31">
+
+        <p><b>Запитання 1</b></p>
+        <p>Знайти похідну функції у = х<sup>8</sup> - 3x<sup>4</sup> - x + 5</p>
+        <form action="answer.html" method="post">
+          <input type="radio" name="answer" value="1"> 8х<sup>7</sup> - 12x<sup>3</sup>-x +5
+          <input type="radio" name="answer" value="2"> 8x<sup>7</sup> - 12x<sup>3</sup> - x
+          <input type="radio" name="answer" value="3"> 8x<sup>7</sup>-12x<sup>3</sup>-1
+          <input type="radio" name="answer" value="4"> 8x<sup>8</sup> - 3x<sup>3</sup>
+        </form>
+
+        <p><b>Запитання 2</b></p>
+        <p>Чому дорівнює кутовий коефіцієнт дотичної до графіка функції у = 2х - х<sup>3</sup> у точці х<sub>0</sub> = 0</p>
+        <form action="answer.html" method="post">
+          <input type="radio" name="answer" value="1"> -2
+          <input type="radio" name="answer" value="2"> -1
+          <input type="radio" name="answer" value="3"> 0
+          <input type="radio" name="answer" value="4"> 2
+        </form>
+
+        <p><b>Запитання 3</b></p>
+        <p>Чому дорівнює швидкість змінювання функції f(t) = t<sup>3</sup> - 4t<sup>2</sup> у точці t = 5?</p>
+        <form action="answer.html" method="post">
+          <input type="radio" name="answer" value="1"> 35
+          <input type="radio" name="answer" value="2"> 115
+          <input type="radio" name="answer" value="3"> 20
+          <input type="radio" name="answer" value="4"> 70
+        </form>
+
+        <p><b>Запитання 4</b></p>
+        <p>Відомо, що f'(x) = x<sup>2</sup> - 9x. Знайдіть критичні точки функції f(x).</p>
+        <form action="answer.html" method="post">
+          <input type="radio" name="answer" value="1"> 0; 3
+          <input type="radio" name="answer" value="2"> 4; 5
+          <input type="radio" name="answer" value="3"> 0; 9
+          <input type="radio" name="answer" value="4"> -3; 3
+        </form>
+
+        <p><b>Запитання 5</b></p>
+        <p>Скільки критичних точок має функція y = 3cosx + 1,5x?</p>
+        <form action="answer.html" method="post">
+          <input type="radio" name="answer" value="1"> 1
+          <input type="radio" name="answer" value="2"> 2
+          <input type="radio" name="answer" value="3"> жодної
+          <input type="radio" name="answer" value="4"> безліч
+        </form>
+
+        <p>Що було для Вас складним при розв’язанні завдань контрольної?</p>
+
+        <textarea class="komentar" name="textarea" rows="4" cols="50" placeholder="Ваша відповідь"></textarea>
+
+        <br>
+
+        <input class="but" type="button" value="Відправити">
+        <input class="but" type="reset" value="Скасувати">       
+    </section>
+
+    <footer>
+        <p class="fp">Автор: Маслак Ольга Василівна, студентка групи МІМ-23 Криворізького державного педагогічного університету.</p>
+    </footer>
+</body>
+</html>
